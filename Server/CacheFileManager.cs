@@ -45,7 +45,7 @@ namespace net.rs64.VRCAvatarBuildServerTool.Server
 
         string EscapeFileName(string name)
         {
-            return name.Replace("/", "\\");
+            return name.Replace("/", "_");
         }
 
         public Task<byte[]> GetFile(string hash)
